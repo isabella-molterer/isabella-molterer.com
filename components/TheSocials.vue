@@ -27,9 +27,10 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  gap: 1rem;
 
   &__link {
+    padding: 1rem 0.5rem;
+
     .icon,
     .icon path {
       fill: $color--black;
