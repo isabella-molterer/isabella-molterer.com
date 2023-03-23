@@ -1,0 +1,117 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+body {
+    background-color: $color--white;
+    color: $color--black;
+    font-family: 'Poppins', monospace, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+
+    @media screen and (min-width: $breakpoint--sm) {
+        max-width: 640px;
+    }
+
+    @media screen and (min-width: $breakpoint--md) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: $breakpoint--lg) {
+        max-width: 1024px;
+    }
+
+    @media screen and (min-width: $breakpoint--xl) {
+        max-width: 1280px;
+    }
+
+    @media screen and (min-width: $breakpoint--xxl) {
+        max-width: 1536px;
+    }
+}
+
+.page {
+    padding: 0 5%; 
+    margin: 0 auto;
+
+    &-index {
+        header {
+            position: fixed;
+            background-color: $color--white;
+            left: 0;
+            top: 0;
+            z-index: 9000;
+
+            @media screen and (min-width: $breakpoint--sm) {
+                background-color: transparent;
+                position: relative;
+            }
+        }
+
+        .about {
+            margin: 100px 0 auto;
+
+            @media screen and (min-width: $breakpoint--sm) {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &-imprint,
+    &-error {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        height: 100vh;
+
+        .imprint,
+        .error {
+            flex: 1;
+        }
+
+        footer {
+            margin-top: 3rem;
+
+            @media screen and (min-width: $breakpoint--md) {
+                margin-top: auto;
+            }
+        }
+    }
+
+    &-imprint {
+        display: block;
+
+        @media screen and (min-width: $breakpoint--sm) {
+            display: flex;
+        }
+    }
+}
+
+.dark-mode {
+    body {
+      background-color: $color--background-dm;
+      color: $color--white;
+    }
+
+    .page-index {
+        header {
+            background-color: $color--background-dm;
+        }
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
