@@ -1,6 +1,5 @@
 // Nuxt config: https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    ssr: true,
     modules: ['@nuxtjs/color-mode', 'nuxt-icon', 'nuxt-jsonld', 'nuxt-simple-sitemap'],
     watchers: {
       webpack: {

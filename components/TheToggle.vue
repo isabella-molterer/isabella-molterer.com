@@ -24,7 +24,12 @@
     border: 3px solid #e4e7ec;
     border-radius: 2rem;
     background-color: $color--white;
-    transition: background-color 250ms;
+    transition: all 250ms;
+
+    &:hover {
+      cursor: pointer;
+      border: 3px solid $color--secondary;
+    }
   }
 
   &__button {
