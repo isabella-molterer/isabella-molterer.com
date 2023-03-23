@@ -5,17 +5,25 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "npm run lint:js && npm run lint:prettier",
+    "lint-fix": "prettier --write --list-different . && npm run lint:js --fix"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.2.0",
-    "@nuxtjs/tailwindcss": "^6.3.0",
-    "nuxt": "^3.1.0",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nuxt": "^3.3.1",
     "nuxt-icon": "^0.3.2",
+    "nuxt-simple-sitemap": "^2.1.7",
+    "prettier": "^2.8.4",
     "sass": "^1.57.1",
     "sass-loader": "^10.4.1"
   },
   "dependencies": {
-    "@nuxtjs/fontawesome": "^1.1.2"
+    "nuxt-jsonld": "^2.0.7"
   }
 }

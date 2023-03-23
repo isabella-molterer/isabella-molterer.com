@@ -1,0 +1,88 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins-Black', monospace, sans-serif;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: $spacing 0 0;
+    font-size: 2.5rem;
+
+    @media screen and (min-width: $breakpoint--md) {
+      font-size: 4.688rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    margin: calc($spacing * 2) 0 $spacing;
+
+    @media screen and (min-width: $breakpoint--md) {
+      font-size: 3.75rem;
+    }
+}
+
+h3 {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    margin: $spacing 0 calc($spacing / 2);
+
+    @media screen and (min-width: $breakpoint--md) {
+      font-size: 2rem;
+    }
+}
+
+h4 {
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: $spacing 0 calc($spacing / 2);
+    margin: calc($spacing / 2) 0 calc($spacing / 4);
+
+    @media screen and (min-width: $breakpoint--md) {
+      font-size: 1.125;
+    }
+}
+
+.headline {
+    &--has-separator {
+        position: relative;
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: $spacing * 2;
+    
+        &::after {
+            background: $color--gradient;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -$spacing;
+            height: 5px;
+            width: 100%;
+            
+            @media screen and (min-width: $breakpoint--md) {
+                height: 7px;
+            }
+        }
+    }
+
+    &--has-outline {
+        -webkit-text-fill-color: $color--background-lm;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $color--black;
+    }
+}
+
+
+.dark-mode {  
+    .headline--has-outline {
+      -webkit-text-fill-color: $color--background-dm;
+      -webkit-text-stroke-color: $color--white;
+    }
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
