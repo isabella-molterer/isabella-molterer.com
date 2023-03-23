@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
     margin: 0;
 }
@@ -12,6 +17,7 @@ body {
 }
 
 .container {
+    padding: 0 5%; 
     margin: 0 auto;
     width: 100%;
 
@@ -37,19 +43,19 @@ body {
 }
 
 .page {
-    padding: 0 5%; 
-    margin: 0 auto;
-
     &-index {
         header {
             position: fixed;
             background-color: $color--white;
             left: 0;
             top: 0;
+            right: 0;
+            padding: 0 5%;
             z-index: 9000;
 
             @media screen and (min-width: $breakpoint--sm) {
                 background-color: transparent;
+                padding: 0;
                 position: relative;
             }
         }
@@ -112,6 +118,7 @@ ul {
     padding: 0;
 }
 
-* {
-    box-sizing: border-box;
+::selection {
+    color: $color--white;
+    background: $color--primary;
 }

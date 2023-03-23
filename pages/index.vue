@@ -1,10 +1,7 @@
 <template>
   <div class="page page-index container">
     <TheHeader />
-    <div class="about">
-      <TheIntroduction />
-      <TheLinkTree />
-    </div>
+    <TheAbout />
     <TheFooter />
   </div> 
 </template>
