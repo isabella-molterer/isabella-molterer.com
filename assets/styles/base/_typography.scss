@@ -5,6 +5,11 @@ h4 {
     font-family: 'Poppins-Black', monospace, sans-serif;
     line-height: 1;
     text-transform: uppercase;
+    text-shadow: 
+        -1px -1px 0 $color--black,
+        -1px 1px 0 $color--black,
+        1px -1px 0 $color--black,
+        1px 1px 0 $color--black;
 }
 
 h1 {
@@ -70,8 +75,6 @@ h4 {
 
     &--has-outline {
         -webkit-text-fill-color: $color--background-lm;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: $color--black;
     }
 }
 
