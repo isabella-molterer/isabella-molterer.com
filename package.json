@@ -9,11 +9,14 @@
     "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:js && npm run lint:prettier",
-    "lint-fix": "prettier --write --list-different . && npm run lint:js --fix"
+    "lint-fix": "prettier --write --list-different . && npm run lint:js --fix",
+    "commit": "git-cz"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-prettier": "^4.2.1",
     "nuxt": "^3.3.1",
@@ -25,5 +28,10 @@
   },
   "dependencies": {
     "nuxt-jsonld": "^2.0.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }

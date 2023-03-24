@@ -41,7 +41,7 @@ export default defineNuxtConfig({
           // favicon
           { 
             name: 'msapplication-TileColor',
-            content: '#ea5657' 
+            content: '#da532c' 
           },
           { 
             name: 'theme-color',
@@ -80,7 +80,7 @@ export default defineNuxtConfig({
           // twitter
           { 
             name: 'twitter:card', 
-            content: 'website'
+            content: 'summary_large_image'
           },
           { 
             name: 'twitter:site', 
@@ -104,7 +104,8 @@ export default defineNuxtConfig({
           { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
           { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
           { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
-          { rel: 'apple-touch-icon', type: 'image/png', sizes: '180x180', href: '/apple-touch-icon.png' },
+          { rel: 'mask-icon', color: '#5bbad5', href: '/safari-pinned-tab.svg' },
+          { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
           { rel: 'manifest', href: '/site.webmanifest' },
         ]
       }
