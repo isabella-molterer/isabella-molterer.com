@@ -8,16 +8,15 @@
   </div>
 </template>
 
-
 <script>
-import TheError from './components/TheError.vue';
+import TheError from "./components/TheError.vue";
 
 export default {
   components: { TheError },
   data() {
     return {
-      error: Object
-    }
-  }
-}
+      error: Object,
+    };
+  },
+};
 </script>

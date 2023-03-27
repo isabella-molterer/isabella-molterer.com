@@ -1,7 +1,9 @@
 <template>
   <footer>
     <div class="regulartory-links">
-      <NuxtLink to="/">Home</NuxtLink> | <NuxtLink to="/imprint">Imprint</NuxtLink> | <NuxtLink to="/privacy">Privacy</NuxtLink>
+      <NuxtLink to="/">Home</NuxtLink> |
+      <NuxtLink to="/imprint">Imprint</NuxtLink> |
+      <NuxtLink to="/privacy">Privacy</NuxtLink>
     </div>
     <TheSocials />
     <span>&copy; Isabella Molterer</span>
