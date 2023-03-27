@@ -25,7 +25,7 @@ body {
         max-width: 640px;
     }
 
-    @media screen and (min-width: $breakpoint--sm) {
+    @media screen and (min-width: $breakpoint--md) {
         max-width: 768px;
     }
 
@@ -33,7 +33,7 @@ body {
         max-width: 1024px;
     }
 
-    @media screen and (min-width: $breakpoint--lg) {
+    @media screen and (min-width: $breakpoint--xl) {
         max-width: 1280px;
     }
 
@@ -84,7 +84,7 @@ body {
         footer {
             margin-top: $space-sm;
 
-            @media screen and (min-width: $breakpoint--sm) {
+            @media screen and (min-width: $breakpoint--md) {
                 margin-top: $space-lg;
             }
         }

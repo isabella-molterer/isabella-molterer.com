@@ -71,7 +71,7 @@ export default defineNuxtConfig({
           },
           { 
             property: 'og:image', 
-            content: '/isabella-molterer-social-sharing.jpg'
+            content: 'https://isabella-molterer.com/isabella-molterer-social-sharing.jpg'
           },
           { 
             property: 'og:url', 
@@ -96,7 +96,7 @@ export default defineNuxtConfig({
           },
           { 
             name: 'twitter:image', 
-            content: '/isabella-molterer-social-sharing.jpg'
+            content: 'https://isabella-molterer.com/isabella-molterer-social-sharing.jpg'
           },
         ],
         // favicons

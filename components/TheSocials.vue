@@ -2,19 +2,19 @@
   <nav>
     <ul class="socials">
       <li>
-        <NuxtLink class="socials__link" to="https://github.com/isabella-molterer" target="_blank">
+        <a class="socials__link" href="https://github.com/isabella-molterer" target="_blank">
           <Icon name="GithubIcon" size="32" />
-        </NuxtLink>
+        </a>
       </li>
       <li>
-        <NuxtLink class="socials__link" to="https://www.linkedin.com/in/isabella-molterer" target="_blank">
+        <a class="socials__link" href="https://www.linkedin.com/in/isabella-molterer" target="_blank">
           <Icon name="LinkedInIcon" size="32" />
-        </NuxtLink>
+        </a>
       </li>
       <li>
-        <NuxtLink class="socials__link" to="mailto:isabella.molterer@gmail.com">
+        <a class="socials__link" href="mailto:isabella.molterer@gmail.com">
           <Icon name="MailIcon" size="36" />
-        </NuxtLink>
+        </a>
       </li>
     </ul>
   </nav>

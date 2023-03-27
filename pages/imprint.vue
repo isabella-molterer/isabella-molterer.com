@@ -17,8 +17,8 @@
       <div class="imprint__contact">
         <h3>Contact</h3>
         <p>
-          <span><NuxtLink to="mailto:isabella.molterer@gmail.com">isabella.molterer@gmail.com</NuxtLink></span><br>
-          <span><NuxtLink to="tel:+43 660 3569 577">+43 660 3569 577</NuxtLink></span>
+          <span><a href="mailto:isabella.molterer@gmail.com">isabella.molterer@gmail.com</a></span><br>
+          <span><a href="tel:+43 660 3569 577">+43 660 3569 577</a></span>
         </p>
       </div>
     </div>
