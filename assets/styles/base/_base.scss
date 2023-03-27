@@ -4,13 +4,16 @@
 
 html,
 body {
-    background-color: $color--white;
-    color: $color--black;
-    font-family: 'Poppins', monospace, sans-serif;
     max-width: 100%;
     width: 100%;
     overflow-x: hidden;
     margin: 0;
+}
+
+body {
+    background-color: $color--light;
+    color: $color--dark;
+    font-family: 'Poppins', monospace, sans-serif;
 }
 
 .container {
@@ -43,7 +46,7 @@ body {
     &-index {
         header {
             position: fixed;
-            background-color: $color--white;
+            background-color: $color--light;
             left: 0;
             top: 0;
             right: 0;
@@ -79,19 +82,11 @@ body {
         }
 
         footer {
-            margin-top: 3rem;
+            margin-top: $space-sm;
 
             @media screen and (min-width: $breakpoint--md) {
-                margin-top: auto;
+                margin-top: $space-lg;
             }
-        }
-    }
-
-    &-imprint {
-        display: block;
-
-        @media screen and (min-width: $breakpoint--sm) {
-            display: flex;
         }
     }
 }
@@ -100,7 +95,7 @@ body {
     html,
     body {
       background-color: $color--background-dm;
-      color: $color--white;
+      color: $color--light;
     }
 
     .page-index {
@@ -117,6 +112,6 @@ ul {
 }
 
 ::selection {
-    color: $color--white;
+    color: $color--light;
     background: $color--primary;
 }

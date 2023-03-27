@@ -8,7 +8,7 @@ h4 {
 }
 
 h1 {
-    margin: $spacing 0 0;
+    margin: $space-lg 0 0;
     font-size: 2.5rem;
 
     @media screen and (min-width: $breakpoint--md) {
@@ -18,7 +18,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    margin: calc($spacing * 2) 0 $spacing;
+    margin: $space-xxl 0 $space-lg;
 
     @media screen and (min-width: $breakpoint--md) {
       font-size: 3.75rem;
@@ -28,7 +28,7 @@ h2 {
 h3 {
     font-size: 1.25rem;
     text-transform: capitalize;
-    margin: $spacing 0 calc($spacing / 2);
+    margin: $space-lg 0 $space-sm;
 
     @media screen and (min-width: $breakpoint--md) {
       font-size: 2rem;
@@ -38,8 +38,7 @@ h3 {
 h4 {
     font-size: 1rem;
     text-transform: capitalize;
-    margin: $spacing 0 calc($spacing / 2);
-    margin: calc($spacing / 2) 0 calc($spacing / 4);
+    margin: $space-lg 0 $space-sm;
 
     @media screen and (min-width: $breakpoint--md) {
       font-size: 1.125;
@@ -51,14 +50,14 @@ h4 {
         position: relative;
         display: inline-block;
         margin-top: 0;
-        margin-bottom: $spacing * 2;
+        margin-bottom: $space-xxl;
     
         &::after {
             background: $color--gradient;
-            content: "";
+            content: '';
             position: absolute;
             left: 0;
-            bottom: -$spacing;
+            bottom: -$space-lg;
             height: 5px;
             width: 100%;
             
@@ -71,17 +70,17 @@ h4 {
     &--has-outline {
         -webkit-text-fill-color: $color--background-lm;
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: $color--black;
+        -webkit-text-stroke-color: $color--dark;
     }
 }
 
 .dark-mode {  
     .headline--has-outline {
       -webkit-text-fill-color: $color--background-dm;
-      -webkit-text-stroke-color: $color--white;
+      -webkit-text-stroke-color: $color--light;
     }
 }
 
 p {
-    margin-bottom: 0.5rem;
+    margin: 0 0 $space-lg;
 }
