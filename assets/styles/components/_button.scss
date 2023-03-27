@@ -1,12 +1,12 @@
 a {
-    color: $color--dark;
-    padding: $space-md 0;
-    text-decoration: underline;
-    transition: $transition--normal;
+  color: $color--dark;
+  padding: $space-md 0;
+  text-decoration: underline;
+  transition: $transition--normal;
 
-    &:hover {
-        color: $color--primary !important;
-    }
+  &:hover {
+    color: $color--primary !important;
+  }
 }
 
 .dark-mode {
@@ -17,7 +17,7 @@ a {
 
 .btn-link {
   background-color: $color--primary;
-  border: 2px solid $color--primary; 
+  border: 2px solid $color--primary;
   border-radius: 100px;
   color: $color--light;
   display: block;

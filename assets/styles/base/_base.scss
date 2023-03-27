@@ -1,117 +1,117 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    max-width: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    margin: 0;
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
 }
 
 body {
-    background-color: $color--light;
-    color: $color--dark;
-    font-family: 'Poppins', monospace, sans-serif;
+  background-color: $color--light;
+  color: $color--dark;
+  font-family: "Poppins", monospace, sans-serif;
 }
 
 .container {
-    padding: 0 5%; 
-    margin: 0 auto;
-    width: 100%;
+  padding: 0 5%;
+  margin: 0 auto;
+  width: 100%;
 
-    @media screen and (min-width: $breakpoint--sm) {
-        max-width: 640px;
-    }
+  @media screen and (min-width: $breakpoint--sm) {
+    max-width: 640px;
+  }
 
-    @media screen and (min-width: $breakpoint--md) {
-        max-width: 768px;
-    }
+  @media screen and (min-width: $breakpoint--md) {
+    max-width: 768px;
+  }
 
-    @media screen and (min-width: $breakpoint--lg) {
-        max-width: 1024px;
-    }
+  @media screen and (min-width: $breakpoint--lg) {
+    max-width: 1024px;
+  }
 
-    @media screen and (min-width: $breakpoint--xl) {
-        max-width: 1280px;
-    }
+  @media screen and (min-width: $breakpoint--xl) {
+    max-width: 1280px;
+  }
 
-    @media screen and (min-width: $breakpoint--xxl) {
-        max-width: 1536px;
-    }
+  @media screen and (min-width: $breakpoint--xxl) {
+    max-width: 1536px;
+  }
 }
 
 .page {
-    &-index {
-        header {
-            position: fixed;
-            background-color: $color--light;
-            left: 0;
-            top: 0;
-            right: 0;
-            padding: 0 5%;
-            z-index: 9000;
+  &-index {
+    header {
+      position: fixed;
+      background-color: $color--light;
+      left: 0;
+      top: 0;
+      right: 0;
+      padding: 0 5%;
+      z-index: 9000;
 
-            @media screen and (min-width: $breakpoint--sm) {
-                background-color: transparent;
-                padding: 0;
-                position: relative;
-            }
-        }
-
-        .about {
-            margin: 100px 0 auto;
-
-            @media screen and (min-width: $breakpoint--sm) {
-                margin: 0 auto;
-            }
-        }
+      @media screen and (min-width: $breakpoint--sm) {
+        background-color: transparent;
+        padding: 0;
+        position: relative;
+      }
     }
 
-    &-imprint,
-    &-error {
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-        height: 100vh;
+    .about {
+      margin: 100px 0 auto;
 
-        .imprint,
-        .error {
-            flex: 1;
-        }
-
-        footer {
-            margin-top: $space-sm;
-
-            @media screen and (min-width: $breakpoint--md) {
-                margin-top: $space-lg;
-            }
-        }
+      @media screen and (min-width: $breakpoint--sm) {
+        margin: 0 auto;
+      }
     }
+  }
+
+  &-imprint,
+  &-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100vh;
+
+    .imprint,
+    .error {
+      flex: 1;
+    }
+
+    footer {
+      margin-top: $space-sm;
+
+      @media screen and (min-width: $breakpoint--md) {
+        margin-top: $space-lg;
+      }
+    }
+  }
 }
 
 .dark-mode {
-    html,
-    body {
-      background-color: $color--background-dm;
-      color: $color--light;
-    }
+  html,
+  body {
+    background-color: $color--background-dm;
+    color: $color--light;
+  }
 
-    .page-index {
-        header {
-            background-color: $color--background-dm;
-        }
+  .page-index {
+    header {
+      background-color: $color--background-dm;
     }
+  }
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 ::selection {
-    color: $color--light;
-    background: $color--primary;
+  color: $color--light;
+  background: $color--primary;
 }

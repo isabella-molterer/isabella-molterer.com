@@ -1,8 +1,8 @@
 <template>
-    <header>
-      <TheToggle />
-      <TheSocials />
-    </header>
+  <header>
+    <TheToggle />
+    <TheSocials />
+  </header>
 </template>
 
 <style lang="scss">

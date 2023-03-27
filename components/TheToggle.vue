@@ -1,18 +1,24 @@
 <template>
-    <label class="toggle">
-      <input v-model="$colorMode.preference" class="toggle__checkbox" true-value="dark" false-value="light" type="checkbox"/>
-      <div class="toggle__slot slot">
-        <div class="toggle__icon-wrapper icon-wrapper icon-wrapper--sun">
-          <Icon name="SunIcon" />
-        </div>
-        <div class="toggle__button"></div>
-        <div class="toggle__icon-wrapper icon-wrapper icon-wrapper--moon">
-          <Icon name="MoonIcon" />
-        </div>
+  <label class="toggle">
+    <input
+      v-model="$colorMode.preference"
+      class="toggle__checkbox"
+      true-value="dark"
+      false-value="light"
+      type="checkbox"
+    />
+    <div class="toggle__slot slot">
+      <div class="toggle__icon-wrapper icon-wrapper icon-wrapper--sun">
+        <Icon name="SunIcon" />
       </div>
-    </label>
+      <div class="toggle__button"></div>
+      <div class="toggle__icon-wrapper icon-wrapper icon-wrapper--moon">
+        <Icon name="MoonIcon" />
+      </div>
+    </div>
+  </label>
 </template>
-  
+
 <style lang="scss">
 @import "./assets/styles/abstracts/variables.scss";
 
@@ -39,9 +45,9 @@
     width: 1.25rem;
     border-radius: 50%;
     background-color: darken($color--silver, 10%);
-    transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
+    transition: background-color 250ms, border-color 250ms,
+      transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
   }
-
 
   &__checkbox {
     position: absolute;
@@ -74,7 +80,8 @@
     opacity: 0;
     transform: translate(1.5rem, 0rem) rotate(0deg);
     transform-origin: 50% 50%;
-    transition: opacity 150ms, transform 500ms cubic-bezier(0.26, 2.5, 0.46, 0.71);
+    transition: opacity 150ms,
+      transform 500ms cubic-bezier(0.26, 2.5, 0.46, 0.71);
 
     .icon {
       position: absolute;
@@ -107,4 +114,3 @@
   }
 }
 </style>
-  
