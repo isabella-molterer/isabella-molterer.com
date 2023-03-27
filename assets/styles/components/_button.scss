@@ -1,19 +1,17 @@
 a {
-    color: $color--black;
-    padding: calc($spacing / 2) 0;
-    margin-top: $spacing; 
+    color: $color--dark;
+    padding: $space-md 0;
     text-decoration: underline;
-    transition: all 300ms ease;
+    transition: $transition--normal;
 
     &:hover {
         color: $color--primary !important;
-        transition: all 300ms ease;
     }
 }
 
 .dark-mode {
   a {
-    color: $color--white;
+    color: $color--light;
   }
 }
 
@@ -21,16 +19,15 @@ a {
   background-color: $color--primary;
   border: 2px solid $color--primary; 
   border-radius: 100px;
-  color: $color--white;
+  color: $color--light;
   display: block;
   margin: 0 auto;
-  padding: 1.125rem;
+  padding: calc($space-unit * 1.25);
   text-decoration: none;
-  transition: all 300ms ease;
+  transition: $transition--normal;
 
   &:hover {
     background-color: transparent;
     color: $color--primary;
-    transition: all 300ms ease;
   }
 }

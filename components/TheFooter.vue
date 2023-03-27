@@ -15,18 +15,18 @@ footer {
   display: flex;
   text-align: center;
   justify-content: space-between;
-  gap: 1.5rem;
-  transition: all 300ms ease;
-  padding: 3rem 0;
+  gap: $space-md;
+  transition: $transition--normal;
+  padding: $space-xl 0;
   flex-direction: column;
-  border: 2px solid;
+  border-style: solid;
   border-image-slice: 1;
-  border-width: 2px;
+  border-width: 3px;
   border-image-source: $color--gradient;
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
-  margin-top: 3rem;
+  margin-top: $space-xl;
 
   @media screen and (min-width: $breakpoint--md) {
     flex-direction: row;

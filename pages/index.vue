@@ -12,7 +12,7 @@
     '@type': 'WebSite',
     'name': 'Isabella Molterer',
     'url': 'https://isabella-molterer.com/',
-    'description': "Online portfolio of Isabella Molterer, a web developer based in Salzburg, Austria."
+    'description': 'Online portfolio of Isabella Molterer, a web developer based in Salzburg, Austria.'
   });
 
   useHead({

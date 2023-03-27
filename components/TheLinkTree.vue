@@ -4,16 +4,16 @@
       <NuxtLink class="linktree__link btn-link" to="/CV.pdf" target="_blank">Download CV</NuxtLink>
     </li>
     <li class="linktree__item">
-      <NuxtLink class="linktree__link btn-link" to="https://www.linkedin.com/in/isabella-molterer" target="_blank">LinkedIn</NuxtLink>
+      <a class="linktree__link btn-link" href="https://www.linkedin.com/in/isabella-molterer" target="_blank">LinkedIn</a>
     </li>
     <li class="linktree__item">
-      <NuxtLink class="linktree__link btn-link" to="https://github.com/isabella-molterer" target="_blank">GitHub</NuxtLink>
+      <a class="linktree__link btn-link" href="https://github.com/isabella-molterer" target="_blank">GitHub</a>
     </li>
     <li class="linktree__item">
-      <NuxtLink class="linktree__link btn-link" to="https://www.instagram.com/re_be11a" target="_blank">Instagram</NuxtLink>
+      <a class="linktree__link btn-link" href="https://www.instagram.com/re_be11a" target="_blank">Instagram</a>
     </li>
     <li class="linktree__item">
-      <NuxtLink class="linktree__link btn-link" to="mailto:isabella.molterer@gmail.com">Contact</NuxtLink>
+      <a class="linktree__link btn-link" href="mailto:isabella.molterer@gmail.com">Contact</a>
     </li>
   </ul>
 </template>
@@ -25,7 +25,7 @@
   text-align: center;
 
   &__item {
-    margin: 1rem 0;
+    margin: $space-sm 0;
   }
 
   &__link {

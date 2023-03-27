@@ -27,10 +27,15 @@
 </template>
 
 <style lang="scss">
+@import "./assets/styles/abstracts/variables.scss";
+
 .imprint {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   max-width: 670px;
-  padding: 1rem 0;
+  padding: $space-sm 0;
   margin: 0 auto;
-  text-align: center;
+  text-align: center;            
 }
 </style>

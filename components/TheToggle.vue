@@ -23,7 +23,7 @@
     width: 4rem;
     border: 3px solid #e4e7ec;
     border-radius: 2rem;
-    background-color: $color--white;
+    background-color: lighten($color--silver, 5%);
     transition: all 250ms;
 
     &:hover {
@@ -38,9 +38,8 @@
     height: 1.25rem;
     width: 1.25rem;
     border-radius: 50%;
-    background-color: lightgrey;
-    transition: background-color 250ms, border-color 250ms,
-    transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
+    background-color: darken($color--silver, 10%);
+    transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
   }
 
 
@@ -57,7 +56,7 @@
   &--sun {
     position: absolute;
     opacity: 1;
-    transform: translate(0.5rem, -0.05rem) rotate(15deg);
+    transform: translate(0.5rem, -0.075rem) rotate(15deg);
     transform-origin: 50% 50%;
     transition: opacity 150ms, transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
 
@@ -75,14 +74,13 @@
     opacity: 0;
     transform: translate(1.5rem, 0rem) rotate(0deg);
     transform-origin: 50% 50%;
-    transition: opacity 150ms,
-    transform 500ms cubic-bezier(0.26, 2.5, 0.46, 0.71);
+    transition: opacity 150ms, transform 500ms cubic-bezier(0.26, 2.5, 0.46, 0.71);
 
     .icon {
       position: absolute;
       height: 1.5rem;
       width: 1.5rem;
-      color: white;
+      color: $color--light;
     }
   }
 }
@@ -93,8 +91,8 @@
   }
 
   .toggle__button {
-    background-color: #485367;
-    box-shadow: inset 0px 0px 0px 0.75em $color--white;
+    background-color: lighten($color--dark, 25%);
+    box-shadow: inset 0px 0px 0px 0.75em $color--light;
     transform: translate(0.25rem, 0.225rem);
   }
 
