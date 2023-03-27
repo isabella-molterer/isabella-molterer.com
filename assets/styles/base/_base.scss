@@ -92,6 +92,7 @@ body {
 }
 
 .dark-mode {
+    html,
     body {
       background-color: $color--background-dm;
       color: $color--light;
