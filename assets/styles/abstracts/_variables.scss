@@ -1,18 +1,29 @@
 /* colors */
-$color--white: #f5f5f5;
-$color--black: #111111;
+$color--light: #f5f5f5;
+$color--dark: #111111;
+$color--silver: #EBEBEB;
 $color--background-dm: #1a1a1a;
-$color--background-lm: $color--white;
+$color--background-lm: $color--light;
 $color--primary: #ea5657;
 $color--secondary: #c5caff;
 $color--gradient: linear-gradient(0.25turn, $color--primary, $color--secondary);
 
 /* breakpoints */
-$breakpoint--sm: 640px;
-$breakpoint--md: 768px;
-$breakpoint--lg: 1024px;
-$breakpoint--xl: 1280px;
+$breakpoint--sm:  640px;
+$breakpoint--md:  768px;
+$breakpoint--lg:  1024px;
+$breakpoint--xl:  1280px;
 $breakpoint--xxl: 1536px;
 
 /* spacings */
-$spacing: 2.125rem;
+$space-unit: 1rem;
+
+$space-xs:  calc($space-unit / 2);
+$space-sm:  $space-unit;
+$space-md:  calc($space-unit * 1.5);
+$space-lg:  calc($space-unit * 2);
+$space-xl:  calc($space-unit * 3);
+$space-xxl: calc($space-unit * 4);
+
+/* transitions */
+$transition--normal: all 300ms ease;

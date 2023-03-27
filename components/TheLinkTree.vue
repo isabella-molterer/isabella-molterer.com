@@ -25,7 +25,7 @@
   text-align: center;
 
   &__item {
-    margin: 1rem 0;
+    margin: $space-sm 0;
   }
 
   &__link {

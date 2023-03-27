@@ -29,19 +29,18 @@
   justify-content: center;
 
   &__link {
-    padding: 1rem 0.5rem;
+    padding: $space-sm $space-xs;
 
     .icon,
     .icon path {
-      fill: $color--black;
-      transition: all 300ms ease;
+      fill: $color--dark;
+      transition: $transition--normal;
     }
 
     &:hover {
       .icon,
       .icon path {
         fill: $color--primary;
-        transition: all 300ms ease;
       }
     }
   }
@@ -50,7 +49,7 @@
 .dark-mode {
   .icon,
   .icon path {
-    fill: $color--white;
+    fill: $color--light;
   }
 }
 </style>

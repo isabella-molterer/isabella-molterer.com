@@ -57,12 +57,9 @@
     }
 
     &__text {
-      margin: 5.5rem 4rem 2rem;
       max-width: 500px;
-      padding: 1rem 0;
-      margin: 0 auto;
+      margin: 0 auto $space-xl;
     }
   }
 }
-
 </style>

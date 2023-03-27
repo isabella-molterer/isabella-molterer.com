@@ -80,7 +80,7 @@ export default defineNuxtConfig({
           // twitter
           { 
             name: 'twitter:card', 
-            content: 'website'
+            content: 'summary_large_image'
           },
           { 
             name: 'twitter:site', 

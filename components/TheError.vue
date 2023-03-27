@@ -21,7 +21,10 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/styles/abstracts/variables.scss";
+
 .error {
+  margin: $space-md 0 $space-xl;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -33,6 +36,10 @@ export default {
     h2 {
         margin-top: 0;
     }
+  }
+
+  footer {
+    margin-top: 0;
   }
 }
 </style>

@@ -11,8 +11,8 @@ body {
 }
 
 body {
-    background-color: $color--white;
-    color: $color--black;
+    background-color: $color--light;
+    color: $color--dark;
     font-family: 'Poppins', monospace, sans-serif;
 }
 
@@ -25,7 +25,7 @@ body {
         max-width: 640px;
     }
 
-    @media screen and (min-width: $breakpoint--md) {
+    @media screen and (min-width: $breakpoint--sm) {
         max-width: 768px;
     }
 
@@ -33,7 +33,7 @@ body {
         max-width: 1024px;
     }
 
-    @media screen and (min-width: $breakpoint--xl) {
+    @media screen and (min-width: $breakpoint--lg) {
         max-width: 1280px;
     }
 
@@ -46,7 +46,7 @@ body {
     &-index {
         header {
             position: fixed;
-            background-color: $color--white;
+            background-color: $color--light;
             left: 0;
             top: 0;
             right: 0;
@@ -82,19 +82,11 @@ body {
         }
 
         footer {
-            margin-top: 3rem;
+            margin-top: $space-sm;
 
-            @media screen and (min-width: $breakpoint--md) {
-                margin-top: auto;
+            @media screen and (min-width: $breakpoint--sm) {
+                margin-top: $space-lg;
             }
-        }
-    }
-
-    &-imprint {
-        display: block;
-
-        @media screen and (min-width: $breakpoint--sm) {
-            display: flex;
         }
     }
 }
@@ -102,7 +94,7 @@ body {
 .dark-mode {
     body {
       background-color: $color--background-dm;
-      color: $color--white;
+      color: $color--light;
     }
 
     .page-index {
@@ -119,6 +111,6 @@ ul {
 }
 
 ::selection {
-    color: $color--white;
+    color: $color--light;
     background: $color--primary;
 }

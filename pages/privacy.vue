@@ -292,12 +292,12 @@
 
   &__headline-wrapper {
     text-align: center;
-    margin-bottom: $spacing;
+    margin-bottom: $space-lg;
   }
 
   ul {
     list-style-type: disc;
-    padding: 0.5rem 1.5rem;
+    padding: $space-xs $space-md;
   }
 }
 </style>
