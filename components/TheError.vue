@@ -1,12 +1,14 @@
 <template>
-    <div class="error">
-      <div class="error-message">
-        <h1>Error 404</h1>
-        <h2 class="headline headline--has-separator headline--has-outline">Page not found</h2>
-        
-        <NuxtLink class="btn-link" to="/">Return to home page</NuxtLink>
-      </div>
+  <div class="error">
+    <div class="error-message">
+      <h1>Error 404</h1>
+      <h2 class="headline headline--has-separator headline--has-outline">
+        Page not found
+      </h2>
+
+      <NuxtLink class="btn-link" to="/">Return to home page</NuxtLink>
     </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -14,10 +16,10 @@ export default {
   props: {
     error: {
       type: [Object, Function],
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>
 
 <style lang="scss">
@@ -34,7 +36,7 @@ export default {
 
     h1,
     h2 {
-        margin-top: 0;
+      margin-top: 0;
     }
   }
 

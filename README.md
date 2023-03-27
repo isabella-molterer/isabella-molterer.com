@@ -39,7 +39,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 ## Linting
 
-Perform linting with [ESLint](https://eslint.org/) and format code with [Prettier](https://prettier.io/) 
+Perform linting with [ESLint](https://eslint.org/) and format code with [Prettier](https://prettier.io/)
 
 ```bash
 npm run lint

@@ -2,12 +2,20 @@
   <nav>
     <ul class="socials">
       <li>
-        <a class="socials__link" href="https://github.com/isabella-molterer" target="_blank">
+        <a
+          class="socials__link"
+          href="https://github.com/isabella-molterer"
+          target="_blank"
+        >
           <Icon name="GithubIcon" size="32" />
         </a>
       </li>
       <li>
-        <a class="socials__link" href="https://www.linkedin.com/in/isabella-molterer" target="_blank">
+        <a
+          class="socials__link"
+          href="https://www.linkedin.com/in/isabella-molterer"
+          target="_blank"
+        >
           <Icon name="LinkedInIcon" size="32" />
         </a>
       </li>
