@@ -499,6 +499,8 @@
           <li>
             By email:
             <a href="mailto:isabella.molterer@gmail.com"
+              title="E-mail: isabella.molterer@gmail.com"
+              aria-label="E-mail: isabella.molterer@gmail.com"
               >isabella.molterer@gmail.com</a
             >
           </li>

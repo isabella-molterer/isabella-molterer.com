@@ -20,9 +20,14 @@
         <h3>Contact</h3>
         <p>
           <a href="mailto:isabella.molterer@gmail.com"
+             title="E-mail: isabella.molterer@gmail.com"
+             aria-label="E-mail: isabella.molterer@gmail.com"
             >isabella.molterer@gmail.com</a
           ><br />
-          <a href="tel:+43 660 3569 577">+43 660 3569 577</a>
+          <a href="tel:+43 660 3569 577"
+             title="Call: +43 660 3569 577"
+             aria-label="Call: +43 660 3569 577"
+          >+43 660 3569 577</a>
         </p>
       </div>
     </div>

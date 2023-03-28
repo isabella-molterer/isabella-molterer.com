@@ -6,6 +6,7 @@
       true-value="dark"
       false-value="light"
       type="checkbox"
+      aria-label="Theme toggle"
     />
     <div class="toggle__slot slot">
       <div class="toggle__icon-wrapper icon-wrapper icon-wrapper--sun">
