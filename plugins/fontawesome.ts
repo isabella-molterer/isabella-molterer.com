@@ -2,7 +2,6 @@
 import { library, config } from "@fortawesome/fontawesome-svg-core";
 
 /* import font awesome icon component */
-// eslint-disable-next-line import/named
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* import specific icons */

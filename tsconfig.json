@@ -1,7 +1,4 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json",
-  "rules": {
-    "import/no-named-as-default": 0
-  }
+  "extends": "./.nuxt/tsconfig.json"
 }
