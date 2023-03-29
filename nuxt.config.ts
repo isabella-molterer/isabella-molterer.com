@@ -49,7 +49,7 @@ export default defineNuxtConfig({
         // favicon
         {
           name: "msapplication-TileColor",
-          content: "#da532c",
+          content: "#d32c4f",
         },
         {
           name: "theme-color",
