@@ -1,5 +1,8 @@
 <template>
   <div class="page page-imprint container">
+    <Head>
+      <Meta name="robots" content="noindex, nofollow" />
+    </Head>
     <TheHeader />
     <div class="imprint">
       <h1 class="imprint__headline headline headline--has-separator">
@@ -19,15 +22,19 @@
       <div class="imprint__contact">
         <h3>Contact</h3>
         <p>
-          <a href="mailto:isabella.molterer@gmail.com"
-             title="E-mail: isabella.molterer@gmail.com"
-             aria-label="E-mail: isabella.molterer@gmail.com"
+          <a
+            href="mailto:isabella.molterer@gmail.com"
+            title="E-mail: isabella.molterer@gmail.com"
+            aria-label="E-mail: isabella.molterer@gmail.com"
             >isabella.molterer@gmail.com</a
           ><br />
-          <a href="tel:+43 660 3569 577"
-             title="Call: +43 660 3569 577"
-             aria-label="Call: +43 660 3569 577"
-          >+43 660 3569 577</a>
+          <a
+            href="tel:+43 660 3569 577"
+            title="Call: +43 660 3569 577"
+            aria-label="Call: +43 660 3569 577"
+          >
+            +43 660 3569 577</a
+          >
         </p>
       </div>
     </div>

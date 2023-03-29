@@ -1,5 +1,8 @@
 <template>
   <div class="page page-privacy container">
+    <Head>
+      <Meta name="robots" content="noindex, nofollow" />
+    </Head>
     <TheHeader />
     <div class="privacy">
       <div class="privacy__headline-wrapper">
@@ -498,7 +501,8 @@
         <ul>
           <li>
             By email:
-            <a href="mailto:isabella.molterer@gmail.com"
+            <a
+              href="mailto:isabella.molterer@gmail.com"
               title="E-mail: isabella.molterer@gmail.com"
               aria-label="E-mail: isabella.molterer@gmail.com"
               >isabella.molterer@gmail.com</a

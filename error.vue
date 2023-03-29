@@ -1,5 +1,9 @@
 <template>
   <div class="page page-error container">
+    <Head>
+      <Meta name="robots" content="noindex, nofollow" />
+    </Head>
+
     <TheHeader />
 
     <TheError :error="error" />
