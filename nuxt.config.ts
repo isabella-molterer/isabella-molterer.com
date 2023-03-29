@@ -1,11 +1,6 @@
 // Nuxt config: https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    "@nuxtjs/color-mode",
-    "nuxt-icon",
-    "nuxt-jsonld",
-    "nuxt-simple-sitemap",
-  ],
+  modules: ["@nuxtjs/color-mode", "nuxt-jsonld", "nuxt-simple-sitemap"],
   watchers: {
     webpack: {
       aggregateTimeout: 300,
@@ -19,7 +14,14 @@ export default defineNuxtConfig({
     },
   },
   // Global css:
-  css: ["@/assets/styles/styles.scss"],
+  css: [
+    "@/assets/styles/styles.scss",
+    "@fortawesome/fontawesome-svg-core/styles.css",
+  ],
+  build: {
+    transpile: ["@fortawesome/vue-fontawesome"],
+  },
+  plugins: ["~/plugins/fontawesome.ts"],
   // Global page headers: https://go.nuxtjs.dev/config-head
   app: {
     head: {
@@ -41,7 +43,8 @@ export default defineNuxtConfig({
         },
         {
           name: "keywords",
-          content: "Isabella Molterer, portfolio, web developer, web designer",
+          content:
+            "Isabella Molterer, web developer, web designer, web engineering, Salzburg, Austria",
         },
         // favicon
         {

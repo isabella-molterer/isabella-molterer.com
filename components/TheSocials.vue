@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
 <template>
   <nav>
     <ul class="socials">
@@ -10,7 +12,12 @@
           href="https://github.com/isabella-molterer"
           target="_blank"
         >
-          <Icon name="GithubIcon" size="32" alt="GitHub Icon" />
+          <FontAwesomeIcon
+            class="icon"
+            icon="fa-brands fa-github"
+            width="32"
+            alt="GitHub Icon"
+          />
         </a>
       </li>
       <li>
@@ -19,20 +26,31 @@
           title="LinkedIn Link"
           aria-label="Follow link to LinkedIn"
           class="socials__link"
-          href="https://www.linkedin.com/in/isabella-molterer"
+          href="https://www.linkedin.com/in/isabella-molterer/"
           target="_blank"
         >
-          <Icon name="LinkedInIcon" size="32" alt="LinkedIn Icon"/>
+          <FontAwesomeIcon
+            class="icon"
+            icon="fa-brands fa-linkedin-in"
+            width="32"
+            alt="LinkedIn Icon"
+          />
         </a>
       </li>
       <li>
-        <a 
+        <a
           role="button"
           title="E-mail: isabella.molterer@gmail.com"
           aria-label="E-mail: isabella.molterer@gmail.com"
-          class="socials__link" 
-          href="mailto:isabella.molterer@gmail.com">
-          <Icon name="MailIcon" size="36" alt="Mail Icon"/>
+          class="socials__link"
+          href="mailto:isabella.molterer@gmail.com"
+        >
+          <FontAwesomeIcon
+            class="icon"
+            icon="fa-regular fa-paper-plane"
+            width="30"
+            alt="Mail Icon"
+          />
         </a>
       </li>
     </ul>
@@ -45,14 +63,19 @@
 .socials {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
   justify-content: center;
 
   &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: $space-sm $space-xs;
 
     .icon,
     .icon path {
       fill: $color--dark;
+      height: unset;
       transition: $transition--normal;
     }
 
