@@ -24,7 +24,7 @@
     <li class="linktree__item">
       <a
         class="linktree__link btn-link"
-        href="https://www.instagram.com/re_be11a"
+        href="https://www.instagram.com/isabella.molterer/"
         target="_blank"
         >Instagram</a
       >
