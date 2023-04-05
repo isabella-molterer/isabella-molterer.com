@@ -12,7 +12,7 @@ The web portfolio is still a work in progress and will continue to grow over tim
 ## Project Requirements
 The website is developed using the Nuxt 3 Minimal Starter, with Typescript for strong typing and SCSS for styling.
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-Basic search engine optimization (SEO) measures were taken to optimize the website's search engine ranking. The website's responsive design is based on my own concept and preferences, with consideration for modern design trends and best practices for user experience.
+Basic SEO measures were taken to optimize the website's search engine ranking. The website's responsive design is based on my own concept and preferences, with consideration for modern design trends and best practices for user experience.
 The website is hosted and deployed using Netlify and GitHub branching logic. 
 
 <table>
