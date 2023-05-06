@@ -2,6 +2,7 @@
   <div class="page page-index container">
     <TheHeader />
     <TheAbout />
+    <TheSkills />
     <TheFooter />
   </div>
 </template>
