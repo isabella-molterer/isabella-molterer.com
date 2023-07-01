@@ -1,6 +1,6 @@
 // Nuxt config: https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/color-mode", "nuxt-jsonld", "nuxt-simple-sitemap"],
+  modules: ["@nuxtjs/color-mode", "nuxt-simple-sitemap"],
   watchers: {
     webpack: {
       aggregateTimeout: 300,
@@ -21,7 +21,10 @@ export default defineNuxtConfig({
   build: {
     transpile: ["@fortawesome/vue-fontawesome"],
   },
-  plugins: ["~/plugins/fontawesome.ts"],
+  plugins: [
+    "~/plugins/fontawesome.ts",
+    { src: "~/plugins/scrollMagic.ts", mode: "client" },
+  ],
   // Global page headers: https://go.nuxtjs.dev/config-head
   app: {
     head: {

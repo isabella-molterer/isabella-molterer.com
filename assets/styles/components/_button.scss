@@ -9,25 +9,126 @@ a {
   }
 }
 
-.dark-mode {
-  a {
-    color: $color--light;
-  }
-}
-
-.btn-link {
-  background-color: $color--primary;
-  border: 2px solid $color--primary;
+.btn {
   border-radius: 100px;
-  color: $color--light;
-  display: block;
-  margin: 0 auto;
   padding: calc($space-unit * 1.25);
   text-decoration: none;
   transition: $transition--normal;
 
-  &:hover {
+  &--primary {
+    background-color: $color--primary;
+    border: 2px solid $color--primary;
+    color: $color--light;
+
+    &:hover {
+      background-color: transparent;
+      color: $color--primary;
+    }
+  }
+
+  &--secondary {
+    border: 2px solid $color--primary;
+    color: $color--primary !important;
+
+    &:hover {
+      border: 2px solid $color--dark;
+      background-color: $color--dark;
+      color: $color--light !important;
+    }
+  }
+
+  &--black {
+    background-color: $color--dark;
+    border: 2px solid $color--dark;
+
+    span {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+
+    &:hover {
+      border: 2px solid $color--primary;
+      background-color: $color--primary !important;
+      color: $color--light !important;
+    }
+  }
+
+  &-link {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &--toggle {
     background-color: transparent;
-    color: $color--primary;
+    border: 3px solid $color--silver;
+    border-bottom: 3px solid $color--dark;
+    border-radius: 0;
+    color: $color--dark;
+    display: inline-block;
+    font-family: 'Poppins-Bold', monospace, sans-serif;
+
+    &:hover,
+    &.is--active {
+      background-color: $color--silver;
+      border-bottom: 3px solid $color--primary !important;
+      color: $color--primary !important;
+      cursor: pointer;
+
+      .icon,
+      .icon path {
+        fill: $color--primary;
+      }
+    }
+
+    &:first-of-type {
+      border-top-left-radius: 10px;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: 10px;
+    }
+  }
+}
+
+.dark-mode {
+  a {
+    color: $color--light;
+  }
+
+  .btn {
+    &--secondary:hover {
+      border: 2px solid $color--light;
+      background-color: $color--light;
+      color: $color--dark !important;
+    }
+
+    &--black {
+      background: $color--silver;
+      color: $color--dark;
+
+      svg,
+      svg path {
+        fill: $color--dark;
+        transition: $transition--normal;
+      }
+
+      &:hover {
+        svg,
+        svg path {
+          fill: $color--light;
+        }
+      }
+    }
+
+    &--toggle {
+      border: 3px solid lighten($color--background-dm, 5%);
+      border-bottom: 2px solid $color--silver;
+      color: $color--silver;
+
+      &:hover,
+      &.is--active {
+        background: lighten($color--background-dm, 5%);
+      }
+    }
   }
 }

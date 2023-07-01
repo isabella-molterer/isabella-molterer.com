@@ -69,7 +69,7 @@ export default {
       // Responsive breakpoints
       breakpoints: {
         // when window width is >= 320px
-        640: {
+        1024: {
           slidesPerView: 2,
         },
       },
@@ -82,13 +82,21 @@ export default {
 @import "./assets/styles/abstracts/variables.scss";
 .swiper {
   width: 100%;
-  height: 300px;
+  height: 380px;
   overflow: visible;
+
+  @media screen and (min-width: $breakpoint--sm) {
+    height: 300px;
+  }
+
+  @media screen and (min-width: $breakpoint--md) {
+    height: 280px;
+    width: 90%;
+  }
 
   &-button-next,
   &-button-prev {
     color: $color--primary;
-    display: none;
   }
 
   &-pagination {
@@ -101,10 +109,24 @@ export default {
 }
 
 .slide {
+  padding: 0 3rem;
+  display: grid;
+  place-content: center;
+
+  @media screen and (min-width: $breakpoint--md) {
+    display: block;
+    padding: 0 1rem;
+  }
+
   &__title {
+    margin-top: 0;
     margin-bottom: calc($space-unit * 2);
     text-align: center;
     width: 100%;
+
+    @media screen and (min-width: $breakpoint--md) {
+      margin-top: 2rem;
+    }
   }
 
   &__tags {
@@ -113,12 +135,15 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
 
+    @media screen and (min-width: $breakpoint--md) {
+      padding: 0 3rem;
+    }
+
     &__tag {
       border-radius: 100px;
       border: 1px solid $color--primary;
       color: $color--primary;
       padding: calc($space-unit / 2) $space-unit;
-      // margin-right: calc($space-unit / 2);
     }
   }
 }

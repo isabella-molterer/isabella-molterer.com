@@ -7,10 +7,14 @@
     {{ headline }}
     <br />
     <span
-      v-if="subline"
+      v-if="subline && hasSeparator"
       class="headline--has-outline headline--has-separator headline--is-subline"
-      >{{ subline }}</span
     >
+      {{ subline }}
+    </span>
+    <span v-else class="headline--has-outline headline--is-subline">
+      {{ subline }}
+    </span>
   </component>
 </template>
 
@@ -34,6 +38,10 @@ export default {
       default: "left",
       validator: (value: string) =>
         ["left", "center", "right", "justify"].includes(value),
+    },
+    hasSeparator: {
+      type: Boolean,
+      default: false,
     },
     tagType: {
       type: String,

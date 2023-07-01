@@ -1,6 +1,6 @@
 <template>
   <header>
-    <TheToggle />
+    <TheThemeToggle />
     <TheSocials />
   </header>
 </template>

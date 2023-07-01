@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="footer__regulartory-links" role="navigation">
-      <NuxtLink title="Home" to="/">Home</NuxtLink> |
+      <NuxtLink title="Linktree" to="/">Linktree</NuxtLink> |
       <NuxtLink title="Imprint" to="/imprint">Imprint</NuxtLink> |
       <NuxtLink title="Privacy" to="/privacy">Privacy</NuxtLink>
     </div>
