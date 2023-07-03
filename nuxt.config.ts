@@ -1,6 +1,6 @@
 // Nuxt config: https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/color-mode", "nuxt-simple-sitemap"],
+  modules: ["@nuxtjs/color-mode", "nuxt-jsonld", "nuxt-simple-sitemap"],
   watchers: {
     webpack: {
       aggregateTimeout: 300,

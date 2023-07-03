@@ -9,7 +9,11 @@ $color--primary: #d32c4f;
 $color--secondary: #c5caff;
 
 $color--gradient: linear-gradient(0.25turn, $color--primary, $color--secondary);
-$color--gradient-10: linear-gradient(0.4turn, rgba($color--primary, 0.1), rgba($color--secondary, 0.1));
+$color--gradient-10: linear-gradient(
+  0.4turn,
+  rgba($color--primary, 0.1),
+  rgba($color--secondary, 0.1)
+);
 
 /* breakpoints */
 $breakpoint--sm: 640px;
@@ -33,5 +37,11 @@ $transition--normal: all 300ms ease;
 
 /* gradient */
 @mixin gradient($value) {
-    border-image: linear-gradient($value, $color--primary, $color--primary, $color--secondary) 1;
+  border-image: linear-gradient(
+      $value,
+      $color--primary,
+      $color--primary,
+      $color--secondary
+    )
+    1;
 }

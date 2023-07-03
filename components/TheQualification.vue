@@ -12,6 +12,14 @@
     <div v-if="!toggleOn" class="qualification__experience cards">
       <TheCard
         additional-classes="card__experience"
+        headline="Frontend Web Developer"
+        subline="pixelart GmbH"
+        begin-date="03.07.2023"
+        end-date="NOW"
+        description="Developing digital products and business solutions using React and Vue.js"
+      />
+      <TheCard
+        additional-classes="card__experience"
         headline="Fullstack Web Developer"
         subline="Nolimits Digital Business GmbH"
         begin-date="01.02.2021"
@@ -24,14 +32,6 @@
         subline="Atikon EDV & Marketing GmbH"
         begin-date="11.02.2019"
         end-date="28.06.2019"
-        description="Designing and developing websites using a custom CMS framework"
-      />
-      <TheCard
-        additional-classes="card__experience"
-        headline="Web Developer Internship"
-        subline="Atikon EDV & Marketing GmbH"
-        begin-date="30.06.2018"
-        end-date="30.09.2018"
         description="Designing and developing websites using a custom CMS framework"
       />
     </div>

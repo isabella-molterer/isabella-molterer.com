@@ -94,6 +94,7 @@ export default {
   &__image {
     display: block;
     height: 100%;
+    // position: relative !important;
     padding: 0 3rem;
   }
 

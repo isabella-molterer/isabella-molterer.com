@@ -1,7 +1,7 @@
 <template>
   <ul class="linktree">
     <li class="linktree__item">
-      <NuxtLink class="linktree__link btn btn--primary btn-link" to="/home"
+      <NuxtLink class="linktree__link btn btn--primary btn-link" to="/"
         >Portfolio</NuxtLink
       >
     </li>
@@ -32,14 +32,6 @@
     <li class="linktree__item">
       <a
         class="linktree__link btn btn--primary btn-link"
-        href="https://www.instagram.com/isabella.molterer/"
-        target="_blank"
-        >Instagram</a
-      >
-    </li>
-    <li class="linktree__item">
-      <a
-        class="linktree__link btn btn--primary btn-link"
         href="mailto:isabella.molterer@gmail.com"
         >Contact</a
       >
@@ -51,7 +43,12 @@
 @import "./assets/styles/abstracts/variables.scss";
 
 .linktree {
+  margin-top: 100px;
   text-align: center;
+
+  @media screen and (min-width: $breakpoint--sm) {
+    margin-top: 0;
+  }
 
   &__item {
     margin: $space-sm 0;

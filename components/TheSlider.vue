@@ -6,8 +6,10 @@
       <!-- Slides -->
       <div v-for="item in items" :key="item.id" class="swiper-slide slide">
         <h3 class="slide__title">{{ item.title }}</h3>
-        <div class="slide__tags"> 
-          <span v-for="tag in item.tags" :key="tag" class="slide__tags__tag">{{ tag }}</span>
+        <div class="slide__tags">
+          <span v-for="tag in item.tags" :key="tag" class="slide__tags__tag">{{
+            tag
+          }}</span>
         </div>
       </div>
     </div>
