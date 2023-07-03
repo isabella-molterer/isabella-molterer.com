@@ -18,7 +18,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  margin: $space-xxl 0 $space-lg;
+  margin: $space-xxl 0 0;
 
   @media screen and (min-width: $breakpoint--md) {
     font-size: 3.75rem;
@@ -27,7 +27,7 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
-  text-transform: capitalize;
+  font-family: "Poppins-SemiBold", monospace, sans-serif;
   margin: $space-lg 0 $space-sm;
 
   @media screen and (min-width: $breakpoint--md) {
@@ -37,7 +37,8 @@ h3 {
 
 h4 {
   font-size: 1rem;
-  text-transform: capitalize;
+  font-family: "Poppins-SemiBold", monospace, sans-serif;
+  text-transform: none;
   margin: $space-lg 0 $space-sm;
 
   @media screen and (min-width: $breakpoint--md) {
@@ -46,11 +47,12 @@ h4 {
 }
 
 .headline {
+  margin-bottom: $space-xxl;
+
   &--has-separator {
     position: relative;
     display: inline-block;
     margin-top: 0;
-    margin-bottom: $space-xxl;
 
     &::after {
       background: $color--gradient;
@@ -68,7 +70,7 @@ h4 {
   }
 
   &--has-outline {
-    -webkit-text-fill-color: $color--background-lm;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $color--dark;
   }
@@ -76,7 +78,6 @@ h4 {
 
 .dark-mode {
   .headline--has-outline {
-    -webkit-text-fill-color: $color--background-dm;
     -webkit-text-stroke-color: $color--light;
   }
 }

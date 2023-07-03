@@ -13,8 +13,10 @@
     "commit": "git-cz"
   },
   "devDependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@types/scrollmagic": "^2.0.3",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint-config-prettier": "^8.7.0",
@@ -23,14 +25,18 @@
     "nuxt-simple-sitemap": "^2.1.7",
     "prettier": "^2.8.4",
     "sass": "^1.57.1",
-    "sass-loader": "^10.4.1"
+    "sass-loader": "^10.4.1",
+    "swiper": "^9.2.4"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
-    "nuxt-jsonld": "^2.0.7"
+    "gsap": "^3.11.5",
+    "nuxt-jsonld": "^2.0.8",
+    "scrollmagic": "^2.0.8",
+    "scrollmagic-plugin-gsap": "^1.0.4"
   },
   "config": {
     "commitizen": {

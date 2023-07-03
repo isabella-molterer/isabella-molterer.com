@@ -9,11 +9,26 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 
+import {
+  faQuoteLeft,
+  faQuoteRight,
+  faCode,
+  faGraduationCap,
+} from "@fortawesome/free-solid-svg-icons";
+
 // This is important, we are going to let Nuxt worry about the CSS
 config.autoAddCss = false;
 
 /* add each imported icon to the library */
-library.add(faGithub, faLinkedinIn, faPaperPlane);
+library.add(
+  faGithub,
+  faLinkedinIn,
+  faPaperPlane,
+  faQuoteLeft,
+  faQuoteRight,
+  faCode,
+  faGraduationCap
+);
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component("FontAwesomeIcon", FontAwesomeIcon);

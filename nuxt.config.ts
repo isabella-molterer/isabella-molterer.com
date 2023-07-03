@@ -21,7 +21,10 @@ export default defineNuxtConfig({
   build: {
     transpile: ["@fortawesome/vue-fontawesome"],
   },
-  plugins: ["~/plugins/fontawesome.ts"],
+  plugins: [
+    "~/plugins/fontawesome.ts",
+    { src: "~/plugins/scrollMagic.ts", mode: "client" },
+  ],
   // Global page headers: https://go.nuxtjs.dev/config-head
   app: {
     head: {

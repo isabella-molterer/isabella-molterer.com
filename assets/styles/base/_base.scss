@@ -60,7 +60,7 @@ body {
       }
     }
 
-    .about {
+    .quote {
       margin: 100px 0 auto;
 
       @media screen and (min-width: $breakpoint--sm) {
@@ -88,6 +88,14 @@ body {
         margin-top: $space-lg;
       }
     }
+  }
+}
+
+.section:not(.section__introduction) {
+  margin: $space-xxl 0;
+
+  @media screen and (min-width: $breakpoint--md) {
+    margin: calc($space-unit * 6) 0;
   }
 }
 
