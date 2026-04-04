@@ -28,7 +28,8 @@
 <script lang="ts">
 // core version + navigation, pagination modules:
 // eslint-disable-next-line import/no-named-as-default
-import Swiper, { Navigation, Pagination } from "swiper";
+import Swiper from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 // import Swiper and modules styles
 import "swiper/css";
 import "swiper/css/navigation";
